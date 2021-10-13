@@ -1,0 +1,9 @@
+extends layout
+
+block layout-content
+  div.View
+  h1.title Apply to work with us
+    form(action="/jobs" method="POST" enctype="multipart/form-data")
+        input(name="fullname" type="text" placeholder="Complete name")
+        input(name="file" type="file")
+        input(type="submit" value="Apply")
